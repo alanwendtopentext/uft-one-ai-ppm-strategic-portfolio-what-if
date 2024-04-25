@@ -33,4 +33,8 @@ AppContext.Maximize
 AppContext.Sync																			
 
 'Tell the AI engine to point at the application
-AIUtil.SetContext AppContext																
+AIUtil.SetContext AppContext		
+
+'Checkpoint to confirm things worked for the Login
+
+AIUtil("profile", micAnyText, micWithAnchorOnLeft, AIUtil("help", micAnyText, micWithAnchorOnLeft, AIUtil("search"))).CheckExists True
