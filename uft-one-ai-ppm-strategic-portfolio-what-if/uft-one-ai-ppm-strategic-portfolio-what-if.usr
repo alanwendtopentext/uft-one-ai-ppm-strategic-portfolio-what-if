@@ -15,6 +15,7 @@ Action0=Action0\Script.mts
 01 Login=Action1\Script.mts
 02 View the Advantage Portfolio=Action2\Script.mts
 03 Strategy Tab=Action3\Script.mts
+04 Backlog Tab=Action4\Script.mts
 
 [VuserProfiles]
 Profiles=Default Profile
@@ -63,3 +64,6 @@ Action2\ObjectRepository.bdb=
 Action3\Script.mts=
 Action3\Resource.mtr=
 Action3\ObjectRepository.bdb=
+Action4\Script.mts=
+Action4\Resource.mtr=
+Action4\ObjectRepository.bdb=
