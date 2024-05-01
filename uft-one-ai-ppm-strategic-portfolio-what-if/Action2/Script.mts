@@ -14,7 +14,7 @@ AIUtil.RunSettings.AutoScroll.Enable WizardScrollSettings, MaxScrolls
 AIUtil.FindTextBlock("Portfolio Management").Click
 
 'Select demonstration data Advantage Inc from the list of Portfolio data
-AIUtil.FindTextBlock("Advantage Inc").Click
+AIUtil.FindText("Advantage").Click
 
 'Loop until the data for the Overview Dashboard tab of the Advantage Inc portfolio is fully displayed with Actual Cost data
 Counter=0

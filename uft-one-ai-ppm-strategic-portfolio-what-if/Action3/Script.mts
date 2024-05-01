@@ -1,6 +1,9 @@
 ﻿
 AIUtil.FindTextBlock("STRATEGY").Click
 AIUtil.FindTextBlock("Customer Engagement").Click
+
+AIUtil("down_triangle", micAnyText, micWithAnchorOnRight, AIUtil.FindTextBlock("Cost and Resource Distribution")).Click
+
 AIUtil("down_triangle", micAnyText, micFromRight, 1).Click
 AIUtil("down_triangle", micAnyText, micFromRight, 1).Click
 AIUtil("down_triangle", micAnyText, micFromLeft, 11).Click
