@@ -1,8 +1,14 @@
 ﻿'Think this is setting a variable
 AIUtil.SetContext Browser("creationtime:=0")
+WizardScrollSettings=AIUtil.RunSettings.AutoScroll.GetDirection
+MaxScrolls=AIUtil.RunSettings.AutoScroll.GetMaxNumberOfScrolls
+AIUtil.RunSettings.AutoScroll.Disable
 
-'Select OPEN from the top menu
-AIUtil.FindTextBlock("OPEN").Click
+Do 
+	'Select OPEN from the top menu
+	AIUtil.FindTextBlock("OPEN").Click
+Loop Until AIUtil.FindTextBlock("Portfolio Management").Exist(0)
+AIUtil.RunSettings.AutoScroll.Enable WizardScrollSettings, MaxScrolls
 
 'Select Portfolio Management from the OPEN menu
 AIUtil.FindTextBlock("Portfolio Management").Click
